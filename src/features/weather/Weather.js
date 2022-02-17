@@ -3,20 +3,20 @@ import './Weather.css';
 import {TiWeatherPartlySunny} from 'react-icons/ti';
 
 const Weather = () => {
-  const API_KEY = "5e19de9024a1ddbf8360f2aa62455696";
-  const API_URL = `http://api.openweathermap.org/data/2.5/weather?lat=5.55602&lon=-0.1969&appid=${API_KEY}`;
-
   const getWeather = async () => {
-    const response = await fetch(API_URL);
-    const json = await response.json();
-    // Convert weather
-    const kelvinTemp = json.main.temp;
-    const kelvinToCelsius = (kelvinTemp - 273.15).toFixed(2);
-    const weatherDesc = json.weather[0].description;
-    const getKelvinTemp = document.querySelector(".Weather-figure");
-    getKelvinTemp.textContent = kelvinToCelsius + "\u00b0";
-    const getWeatherDesc = document.querySelector(".Weather-type");
-    getWeatherDesc.textContent = weatherDesc;
+    const response = await fetch(
+      "https://weatherapi-com.p.rapidapi.com/forecast.json?q=Kumasi&days=3",
+      {
+        method: "GET",
+        headers: {
+          "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
+          "x-rapidapi-key": "e9a048529amsh7b42a9c837cf0bcp13231djsn17b6f6a60dce",
+        },
+      }
+    );
+    const jsonResponse = await response.json();
+    document.querySelector(".Weather-figure").textContent = `${jsonResponse.current.temp_c}\u00B0C ☁️`
+    document.querySelector(".Weather-type").textContent = `${jsonResponse.location.name}, ${jsonResponse.location.region} 🌇`;
   };
   getWeather();
 
