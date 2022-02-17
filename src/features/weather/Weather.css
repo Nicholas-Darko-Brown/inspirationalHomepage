@@ -1,0 +1,23 @@
+.Weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.weather-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Weather-figure {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Weather-type {
+    text-transform: uppercase;
+}

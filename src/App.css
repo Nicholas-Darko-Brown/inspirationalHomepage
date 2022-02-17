@@ -1,0 +1,54 @@
+body {
+  background-image: url(./features/image/one.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+main {
+  margin-top: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section h4 {
+  color: navy;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+.bg-content {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  background-color:goldenrod;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color:gray;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

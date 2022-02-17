@@ -1,0 +1,11 @@
+.Quotes-container {
+  text-align: center;
+  color: white;
+}
+
+#quote-content {
+  font-style: italic;
+  font-size: 18px;
+  padding-top: 10px;
+}
+  
