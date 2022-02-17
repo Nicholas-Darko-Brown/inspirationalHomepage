@@ -37,7 +37,7 @@ const styles = {
   },
 };
 
-function Goal({ goal, classes }) {
+const Goal = ({ goal, classes }) => {
   const { text, complete, id } = goal;
   const [displayButtons, setDisplayButtons] = useState(false);
   const dispatch = useDispatch();

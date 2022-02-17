@@ -12,7 +12,7 @@ const styles = {
   },
 };
 
-function GoalsContainer({ classes, rainConfetti }) {
+const GoalsContainer = ({ classes, rainConfetti }) => {
   const [goals, setGoals] = useState({
     id1: {
       id: "id1",

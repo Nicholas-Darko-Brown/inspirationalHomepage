@@ -16,7 +16,7 @@ const styles = {
   },
 };
 
-function GoalForm({ classes }) {
+const GoalForm = ({ classes }) => {
   const [goal, setGoal] = useState("");
   const dispatch = useDispatch();
 

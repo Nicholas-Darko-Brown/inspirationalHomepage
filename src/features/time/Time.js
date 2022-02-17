@@ -24,7 +24,7 @@ const styles = {
   },
 };
 
-function Time({ classes }) {
+const Time = ({ classes }) => {
   const time = useSelector(selectTime);
   const dispatch = useDispatch();
 

@@ -10,7 +10,7 @@ import image4 from "./features/image/four.jpg"
 import image5 from "./features/image/five.jpg"
 import image6 from "./features/image/six.jpg"
 
-export default function App() {
+const App = () => {
   const myBg1 = () => {
     document.body.style.backgroundImage = `url(${image2})`;
   }
@@ -51,3 +51,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
