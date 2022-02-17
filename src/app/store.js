@@ -7,6 +7,6 @@ export const store = configureStore({
   reducer: {
     goals: goalsReducer,
     quote: quoteReducer,
-    time: timeReducer,
+    time: timeReducer
   },
 });
